@@ -1,2 +1,2 @@
-# dla-fabuly
-A demo project for use of Java Hibernate. Based on my friend's design project "DLA FABUŁY".
+# Hi, uhh... so, due to a series of random events I have had to put this project on hold, unfortunately.
+# Yet, I am sure to pick it up again on Monday, June 30th.
