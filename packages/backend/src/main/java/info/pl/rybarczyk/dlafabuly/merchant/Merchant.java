@@ -1,9 +1,17 @@
 package info.pl.rybarczyk.dlafabuly.merchant;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 @Entity
 @Table(name = "merchants")
 public class Merchant {
@@ -19,45 +27,5 @@ public class Merchant {
     
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-    
-    public Merchant(){}
-    
-    public Merchant(Integer id, String merchantName, Integer adminId, LocalDateTime createdAt){
-        this.id = id;
-        this.merchantName = merchantName;
-        this.adminId = adminId;
-        this.createdAt = createdAt;
-    }
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public void setMerchantName(String merchantName) {
-        this.merchantName = merchantName;
-    }
-
-    public void setAdminId(Integer adminId) {
-        this.adminId = adminId;
-    }
-
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public String getMerchantName() {
-        return merchantName;
-    }
-
-    public Integer getAdminId() {
-        return adminId;
-    }
-
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
-    }
 }
